@@ -195,137 +195,139 @@
     height: auto;
 }
 
+@media screen and (max-width:600px) {
+    
+    .main{
+        background-color: #141414;
+    }
 
-.main{
-    background-color: #141414;
-}
-
-.main__container{
-    display: grid;
-    grid-template-columns: auto;
-    padding: 50px;
-    align-items: center;
-    justify-self: center;
-}
-.main__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-}
-.main__content h1{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-}
-.main__content h2{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-}
-.main__content{
-    color: #fff;
-    margin-top: 50px;
-}
-.main__btn{
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.4s;
-    outline: none;
-}
-.main__btn a{
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-.main__btn:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #4837ff;
-    transition: all 0.35s ease;
-    border-radius: 4px;
-}
-.main__btn:hover{
-    color: #fff;
-}
-.main__btn:hover:after{
-    width: 100%;
-}
-.services{
-    background: #141414;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: auto;
-}
-.services h1{
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%,#ff8c7f 21%, #ff9185 52%, #cf556c 78%, #b1285b);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-}
-.services__card{
-    margin: 1rem;
-    height: 500px;
-    border: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(/images/card1.jpg);
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-.services__card:nth-child(2){
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(/images/card2.jpg);
-}
-.services h2{
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-.services__card p {
-    position: absolute;
-    top: 40px;
-    left: 30px;
-}
-.services__card button{
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    cursor: pointer;
-}
-.services__card:hover{
-    transform: scale(1.075);
-    transition: 0.2s ease-in ;
-    cursor: pointer;
+    .main__container{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 50px;
+        align-items: center;
+        justify-self: center;
+    }
+    .main__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .main__content h1{
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+    }
+    .main__content h2{
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+    }
+    .main__content{
+        color: #fff;
+        margin-top: 50px;
+    }
+    .main__btn{
+        font-size: 1rem;
+        background-image: linear-gradient(to top, #f77062 0%, #fe5196);
+        padding: 14px 32px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.4s;
+        outline: none;
+    }
+    .main__btn a{
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        text-decoration: none;
+    }
+    .main__btn:after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #4837ff;
+        transition: all 0.35s ease;
+        border-radius: 4px;
+    }
+    .main__btn:hover{
+        color: #fff;
+    }
+    .main__btn:hover:after{
+        width: 100%;
+    }
+    .services{
+        background: #141414;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .services h1{
+        background-color: #ff8177;
+        background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%,#ff8c7f 21%, #ff9185 52%, #cf556c 78%, #b1285b);
+        background-size: 100%;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+    }
+    .services__card{
+        margin: 1rem;
+        height: 500px;
+        border: 4px;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(/images/card1.jpg);
+        background-size: cover;
+        position: relative;
+        color: #fff;
+    }
+    .services__card:nth-child(2){
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(/images/card2.jpg);
+    }
+    .services h2{
+        position: absolute;
+        top: 350px;
+        left: 30px;
+    }
+    .services__card p {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+    .services__card button{
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #f77062;
+        position: absolute;
+        top: 440px;
+        left: 30px;
+        cursor: pointer;
+    }
+    .services__card:hover{
+        transform: scale(1.075);
+        transition: 0.2s ease-in ;
+        cursor: pointer;
+    }
 }
 @media screen and (min-width:600px){
     .main{
