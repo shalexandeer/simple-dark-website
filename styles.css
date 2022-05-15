@@ -207,6 +207,12 @@
     align-items: center;
     justify-self: center;
 }
+.main__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
 .main__content h1{
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
